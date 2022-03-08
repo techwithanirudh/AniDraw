@@ -8,7 +8,7 @@ var saveBtn;
 function setup() {
   createCanvas(windowWidth, windowHeight - 150);
 
-  var options = createDiv().style('display: flex; justify-content: space-between; margin: 10')
+  var options = createDiv().style('display: flex; justify-content: space-between; margin: 10px 40px;')
 
   var optionsDiv = createDiv().parent(options).style('display: flex;')
 	
