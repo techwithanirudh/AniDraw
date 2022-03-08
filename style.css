@@ -1,0 +1,3 @@
+button, input {
+	outline: none;border: none;border-radius: 25px;background-color: lightblue;color: white;
+}

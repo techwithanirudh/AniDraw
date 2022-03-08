@@ -22,6 +22,9 @@ function setup() {
   bgColor = createColorPicker('#1e1e1e').parent(optionsValues).style('margin-top: 10px;')
   // penWidth = createSelect(false).parent(optionsValues).style('margin-top: 10px;')
   penWidth = createInput('2', 'number').parent(optionsValues).style('margin-top: 10px;')
+	penWidth.elt.min = '0'
+	penWidth.elt.max = '1000'
+	
 	
 	// penWidth.option('1')
 	// penWidth.option('2')
