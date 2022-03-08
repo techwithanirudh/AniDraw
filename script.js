@@ -8,7 +8,7 @@ var saveBtn;
 function setup() {
   createCanvas(windowWidth, windowHeight - 150);
 
-  var options = createDiv().style('display: flex; justify-content: space-between;')
+  var options = createDiv().style('display: flex; justify-content: space-between; margin: 10')
 
   var optionsDiv = createDiv().parent(options).style('display: flex;')
 	
@@ -36,7 +36,11 @@ function setup() {
 	var optionsBtns = createDiv().parent(options).style('display: flex;')
 	
 	clearBtn = createButton('Clear').parent(optionsBtns).style('width: 100px;')
+	clearBtn.elt.className = 'w-full sm:w-[25rem] flex items-center justify-center bg-white text-indigo-700 font-semibold hover:bg-indigo-700 border border-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 hover:border-transparent hover:text-white font-bold py-4 px-4 border-b-4 rounded-full'
+	
 	saveBtn = createButton('Save').parent(optionsBtns).style('width: 100px; margin-left: 8px;')
+	saveBtn.elt.className = 'w-full sm:w-[25rem] flex items-center justify-center bg-white text-indigo-700 font-semibold hover:bg-indigo-700 border border-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 hover:border-transparent hover:text-white font-bold py-4 px-4 border-b-4 rounded-full'
+	
 }
 
 function draw() {
